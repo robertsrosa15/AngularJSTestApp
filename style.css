@@ -1,0 +1,462 @@
+/*--------------- general style -----------------*/
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	/* border: 1px solid blue; */
+}
+
+body {
+	font-family: arial, sans-serif;
+	color: #221F51;
+	font-size: 62.5%;
+}
+
+.div-wrapper { /* background-color: #EBDEF0; */
+	/* padding: 3em; */
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*--------------- header -----------------*/
+header {
+  background: #fff9ff; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#ffeaff,  #fff9ff, #ffffff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ffeaff,  #fff9ff, #ffffff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ffeaff,  #fff9ff, #ffffff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ffeaff,  #fff9ff, #ffffff); /* Standard syntax */
+}
+
+header * { /* border: 1px solid green; */
+	
+}
+
+header>* {
+	
+}
+
+header>*>* {
+	display: inline-block;
+}
+
+header>*>*>* {
+	display: inline-block;
+}
+
+header>*>*>*>* {
+	
+}
+
+header h1 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 4em;
+}
+
+header h2 {
+	font-size: 1.5em;
+}
+
+/*--------------- .header-top -----------------*/
+.header-top {
+	text-align: center;
+}
+
+.header-top * {
+	margin: 5px;
+}
+
+/*--------------- .header-top    >>>   .header-logo  -----------------*/
+.header-logo {
+	margin: 0 0 0 30px;
+}
+
+.header-logo * {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#img-logo {
+	max-width: 100px;
+}
+
+/*--------------- .header-middle >>>>   .image-menurt  -----------------*/
+.image-menu-a {
+	display: none;
+	text-align: center;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.image-menu {
+	width: 35px;
+}
+
+/*--------------- .header-top    >>>   .div-header-side  -----------------*/
+.header-div-side {
+	float: right;
+}
+
+.header-div-side * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.header-div-side img {
+	max-width: 15px;
+}
+
+.header-search {
+	
+}
+
+/*--------------- .header-middle -----------------*/
+.header-middle {
+	text-align: center;
+}
+
+.header-middle * {
+	margin: 5px;
+}
+/*--------------- .header-middle >>>>   #header-menu  -----------------*/
+#header-menu {
+	
+}
+
+#header-menu * { /* margin: 5px 20px 50px 20px; */
+	
+}
+
+#header-menu {
+	
+}
+
+#header-menu a {
+	margin: 25px;
+	font-size: 2.25em;
+}
+
+/*--------------- .header-middle >>>>   .header-div-cart  -----------------*/
+.header-div-cart {
+	float: right;
+	font-size:1.5em;
+}
+
+.header-cart * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.header-cart img {
+	max-width: 15px;
+}
+
+/*--------------- .header-bottom -----------------*/
+.header-bottom {
+	margin: 60px 0 0 0;
+}
+
+.header-bottom * {
+	margin: 5px 0 5px 30px;;
+	text-align: center;
+	vertical-align: middle;
+	text-align: center;
+}
+/*--------------- .header-bottom >>>>   #header-menu  -----------------*/
+#header-breadcrumbs {
+	
+}
+
+#header-breadcrumbs * {
+	margin: 0;
+}
+
+#header-breadcrumbs {
+	
+}
+
+#header-breadcrumbs a {
+	font-size: 1.5em;
+}
+
+/*--------------- .header-bottom >>>>   .header-div-cart  -----------------*/
+.header-div-sort {
+	
+}
+
+.header-div-sort * {
+	margin: 0;
+}
+
+.header-div-sort span {
+	font-size: 1.5em;
+}
+
+.header-sort {
+	border: none;
+}
+
+/*--------------- .main -----------------*/
+.main {
+	margin: 0;
+}
+
+.empty-main{
+	clear:both;
+}
+
+
+.main * { /* border: 1px solid red; */
+	margin: 0;
+}
+
+.image-small {
+	width: 100%;
+	height: auto;
+	padding: 1px;
+	-webkit-filter: drop-shadow(5px 5px 2px gray);
+	filter: drop-shadow(5px 5px 2px gray);
+}
+
+.image-large {
+	max-width: 300px;
+	height: auto;
+	padding: 1px;
+	border: 10px outer grey;
+	background-color: darkGrey;
+	border-radius: 10px;
+}
+
+div.gallery {
+	
+}
+
+div.gallery:hover {
+	opacity: 0.8;
+}
+
+div.gallery img { /*  Properties coming from .image-small*/
+	
+}
+
+div.desc {
+	
+}
+
+.responsive {
+	box-sizing: border-box;
+	padding: 20px 10px 50px 10px;
+	margin: 0;
+	float: left;
+	width: 24.99999%;
+}
+
+.responsive * {
+	
+}
+
+@media only screen and (max-width: 1150px) {
+	.responsive {
+		width: 33.333333%;
+	}
+	.responsive h2 {
+		color: orange;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.responsive {
+		width: 33.333333%;
+	}
+	.responsive h2 {
+		color: green;
+	}
+	body {
+		font-size: 58.99999%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+		width: 49.99999%;
+	}
+	.responsive h2 {
+		color: blue;
+	}
+	.header-div-side {
+		display: none;
+	}
+	.header-div-cart {
+		display: none;
+	}
+	.image-menu-a {
+		display: inline-block;
+	}
+	#header-menu {
+		display: none;
+	}
+	header h1 {
+		font-family: 'Indie Flower', cursive;
+		font-size: 3.5em;
+	}
+	#img-logo {
+		max-width: 85px;
+	}
+	.header-logo {
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+		padding: 25px 0 40px 0;
+	}
+	.responsive h2 {
+		color: red;
+	}
+	header h1 {
+		font-family: 'Indie Flower', cursive;
+		font-size: 2.5em;
+	}
+	#img-logo {
+		max-width: 60px;
+	}
+	.image-menu {
+		widht: 25px;
+	}
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.gallery h2 {
+	font-size: 1.5em;
+	margin: 5px auto;
+	text-align: center;
+}
+
+/* ---------  Star review ----------- */
+div.stars {
+	width: 270px;
+	display: inline-block;
+}
+
+input.star {
+	display: none;
+}
+
+label.star {
+	float: right;
+	padding: 10px;
+	font-size: 36px;
+	color: #444;
+	transition: all .2s;
+}
+
+input.star:checked      ~ label.star:before {
+	content: '\f005';
+	color: #FD4;
+	transition: all .25s;
+}
+
+input.star-5:checked      ~ label.star:before {
+	color: #FE7;
+	text-shadow: 0 0 20px #952;
+}
+
+input.star-4:checked      ~ label.star:before {
+	color: #FE7;
+}
+
+input.star-2:checked      ~ label.star:before {
+	color: #FFA500;
+}
+
+input.star-1:checked      ~ label.star:before {
+	color: #F62;
+}
+
+label.star:hover {
+	transform: rotate(-15deg) scale(1.3);
+}
+
+label.star:before {
+	content: '\f006';
+	font-family: FontAwesome;
+}
+
+/* --------   Star Rating Percentage -------------*/
+@import "lesshat";
+
+.star-ratings-css {
+	unicode-bidi: bidi-override;
+	color: #c5c5c5;
+	font-size: 25px;
+	max-width: 105px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0;
+	text-shadow: 0px 1px 0 #a2a2a2;
+	vertical-align: middle;
+}
+
+.star-ratings-css-top {
+	color: #e7711b;
+	padding: 0;
+	position: absolute;
+	z-index: 1;
+	display: block;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.star-ratings-css-bottom {
+	padding: 0;
+	display: block;
+	z-index: 0;
+}
+
+/* --------------------  footer   ---------------------  */
+footer {
+	
+
+  background: lightgrey; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#ffffff,  #fff9ff, #ffeaff);/* For Safari 5.1 to 6.0*/
+  background: -o-linear-gradient(#ffffff,  #fff9ff, #ffeaff);/* For Opera 11.1 to 12.0*/
+  background: -moz-linear-gradient(#ffffff,  #fff9ff, #ffeaff);/* For Firefox 3.6 to 15*/
+  background: linear-gradient(#ffffff,  #fff9ff, #ffeaff); /*Standard syntax */
+  width: 100%;
+  padding: 60px 0px;
+}
+
+.footer-div-side {
+	float: right;
+}
+
+.footer-div-side * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.footer-div-side img {
+	max-width: 15px;
+}
+
+.footer-search {
+	
+}
+
+/*--------------- .footer-middle -----------------*/
+.footer-middle {
+	text-align: center;
+}
+
+.footer-middle * {
+	margin: 5px;
+}

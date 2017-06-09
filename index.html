@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html ng-app="app-ltb">
+<head lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angular Ecom</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+ -->
+<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-controller="StoreController as store">
+	<div class="div-wrapper">
+		<p>Div Wrappers</p>
+		<header>
+			<div class="header-top">
+				<h1>
+					<a class="header-logo" href="index.html"> 
+						<img id="img-logo" alt="" src="/image/logo.png" />
+						Angular Ecoms 
+					</a> 
+					<a class="image-menu-a" href=""> 
+						<img class="image-menu" alt=""
+						src="image/mobile-menu.png" /> 
+					</a>
+				</h1>
+				<div class="header-div-side">
+					<a class="header-search" href="index.html"> <img id="img-search" alt=""
+						src="/image/search.png" /> Search </a> <a class="header-account" href="index.html"> <img
+						id="img-account" alt="" src="/image/account.png" />Account </a>
+				</div>
+			</div>
+			<div class="header-middle">
+				<nav id="header-menu">
+					<a href="index.html">Shop</a> <a href="index.html">About</a> <a href="index.html">Contact</a>
+				</nav>
+				<div class="header-div-cart">
+					<a class="header-cart" href="index.html"> <img id="img-cart" alt="" src="/image/cart.png" />
+						Cart </a>
+				</div>
+			</div>
+			<nav class="header-bottom">
+				<nav id="header-breadcrumbs">
+					<a href="index.html">Home</a>
+					<a href="kids-prodcut.html"> &gt; Category</a>
+					<!-- <li><a href="grown-up.html"> > Other Category</a></li> -->
+				</nav>
+				<div class="header-div-sort">
+					<span>Sort -</span>
+					<select class="header-sort" size="1">
+						<option value="name" selected="selected">Name</option>
+						<option value="price">Price</option>
+						<option value="arrival">Arrival</option>
+					</select>
+				</div>
+			</nav>
+		</header>
+		<div class="main" data-ng-repeat="product in store.products">
+			<div class="responsive" ng-init="store.loadRating(product)">
+				<div class="gallery">
+					<a target="_blank" href=""> <img class="image-small" alt="" src="image/account.png" /> </a>
+					<div class="desc">
+						<h2>{{product.category}}</h2>
+						<h2>{{product.name}}</h2>
+						<div class="star-ratings-css">
+							<div class="star-ratings-css-top" style="width: {{product.rating}}">
+								<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+							</div>
+							<div class="star-ratings-css-bottom">
+								<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+							</div>
+						</div>
+						<h2>{{product.price | currency}}</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- 	<div class="empty-main"></div> -->
+		<footer>
+			<div class="footer-top">
+				<!-- <h1>
+					<a class="footer-logo" href="index.html"> 
+						<img id="img-logo" alt="" src="/image/logo.png" />
+						Angular Ecoms 
+					</a> 
+					<a class="image-menu-a" href=""> 
+						<img class="image-menu" alt=""
+						src="image/mobile-menu.png" /> 
+					</a>
+				</h1> -->
+				<div class="footer-div-side">
+					<a class="footer-search" href="index.html"> <img id="img-search" alt=""
+						src="/image/search.png" /> Search </a> <a class="footer-account" href="index.html"> <img
+						id="img-account" alt="" src="/image/account.png" />Account </a>
+				</div>
+			</div>
+			<div class="footer-middle">
+				<nav id="footer-menu">
+					<a href="index.html">Shop</a> <a href="index.html">About</a> <a href="index.html">Contact</a>
+				</nav>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
