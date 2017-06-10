@@ -16,8 +16,8 @@ body {
 
 .div-wrapper { /* background-color: #EBDEF0; */
 	/* padding: 3em; */
-	max-width: 1200px;
 	margin: 0 auto;
+	width:100%;
 }
 
 /*--------------- header -----------------*/
@@ -199,13 +199,10 @@ header h2 {
 
 /*--------------- .main -----------------*/
 .main {
-	margin: 0;
-}
-
-.empty-main{
-	clear:both;
-}
-
+	margin: 0 auto;
+	overflow: auto;
+/* 	width: 960px;
+ */}
 
 .main * { /* border: 1px solid red; */
 	margin: 0;
@@ -213,6 +210,8 @@ header h2 {
 
 .image-small {
 	width: 100%;
+	margin: 0 auto;
+	text-align: center;
 	height: auto;
 	padding: 1px;
 	-webkit-filter: drop-shadow(5px 5px 2px gray);
@@ -335,7 +334,7 @@ div.desc {
 }
 
 .gallery h2 {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	margin: 5px auto;
 	text-align: center;
 }
@@ -426,17 +425,24 @@ label.star:before {
 footer {
 	
 
-  background: lightgrey; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#ffffff,  #fff9ff, #ffeaff);/* For Safari 5.1 to 6.0*/
-  background: -o-linear-gradient(#ffffff,  #fff9ff, #ffeaff);/* For Opera 11.1 to 12.0*/
-  background: -moz-linear-gradient(#ffffff,  #fff9ff, #ffeaff);/* For Firefox 3.6 to 15*/
-  background: linear-gradient(#ffffff,  #fff9ff, #ffeaff); /*Standard syntax */
+  background: #ffeaff; /* For browsers that do not support gradients */
+/*   background: -webkit-linear-gradient(#ffffff,  #fff9ff, #ffeaff);For Safari 5.1 to 6.0
+  background: -o-linear-gradient(#ffffff,  #fff9ff, #ffeaff);For Opera 11.1 to 12.0
+  background: -moz-linear-gradient(#ffffff,  #fff9ff, #ffeaff);For Firefox 3.6 to 15
+  background: linear-gradient(#ffffff,  #fff9ff, #ffeaff); Standard syntax */
   width: 100%;
   padding: 60px 0px;
 }
 
+.footer-top{
+	text-align: center;
+	margin: 0 auto;
+}
+.footer-top p {
+	text-align: center;
+}
+
 .footer-div-side {
-	float: right;
 }
 
 .footer-div-side * {
